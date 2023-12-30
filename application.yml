@@ -1,26 +1,21 @@
-
 spring:
   datasource:
     username: root
     password: Singh@2022
     driver-class-name: com.mysql.jdbc.Driver
-
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
-
 logging:
   level:
     org.hibernate.SQL: DEBUG
     org.hibernate.type: TRACE
-
 eureka:
   instance:
     prefer-ip-address: true
-
   client:
     fetch-registry: true
     register-with-eureka: true
